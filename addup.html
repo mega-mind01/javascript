@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+</head>
+
+<body>
+    <h1>This Script Adds Two Numbers</h1>
+    <h4>Try It Out</h4>
+
+    <h6>Enter Numbers Here</h6>
+    <label for="Number">Number 1</label>
+    <input type="number" id="num1">
+    <label for="Number">Number 2</label>
+    <input type="number" id="num2">
+    <input type="submit" id="btnSubmit" value="Add">
+
+    <script>
+        let btnSubmit;
+
+        btnSubmit = document.getElementById("btnSubmit");
+
+        btnSubmit.addEventListener("click", add);
+
+        function add() {
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            var result = num1 + num2;
+
+            if (result != NaN) {                
+                window.alert("Your Result Is " + result + " Na this thing you no fit do yourself?");
+            }
+        }
+    </script>
+</body>
+
+</html>
